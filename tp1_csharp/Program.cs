@@ -49,7 +49,8 @@ namespace tp1_csharp
                 var inputNumber = Console.ReadLine().Trim();
                 if (String.IsNullOrEmpty(inputNumber) || Parsing.ValidateNumber(inputNumber) == false)
                 {
-                    Console.WriteLine("Invalid number.\nTry again.");
+                    Console.WriteLine("Invalid number.\n" +
+                                      "Try again.");
                     Thread.Sleep(1000);
                     System.Diagnostics.Process.Start(System.AppDomain.CurrentDomain.FriendlyName);
                     Console.Clear();
